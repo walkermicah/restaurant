@@ -1,5 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -7,12 +6,6 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "Al Dente Restaurant",
-      favicon: "./src/img/icon.png",
-    }),
-  ],
   module: {
     rules: [
       {
