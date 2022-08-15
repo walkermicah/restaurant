@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Al Dente Restaurant",
-      favicon: "../src/img/icon.png",
+      favicon: "./src/img/icon.png",
     }),
   ],
   module: {
